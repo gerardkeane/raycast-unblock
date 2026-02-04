@@ -20,5 +20,10 @@ This script unblocks all PDF files in your Downloads folder. It is designed to b
 
 ## Troubleshooting
 
+*   **Can't find "Add Script Directory"?**
+    *   Try searching for **Create Script Command** in the main Raycast window. This usually triggers the setup flow.
+    *   Alternatively, go to **Settings > Extensions**, and make sure **Script Commands** is enabled/installed. It might be listed under a "Core" or "System" section.
+    *   If you still can't find it, you can simply create a shortcut to the `.ps1` file and place it in a folder indexed by Raycast (like your Start Menu folder), though this won't give you the metadata features.
+
 *   **Execution Policy**: If the script fails to run due to permission errors, you may need to adjust your PowerShell execution policy.
     *   Open PowerShell as Administrator and run: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`.
